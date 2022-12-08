@@ -1,0 +1,41 @@
+body {
+    background-color: white;
+}
+
+@font-face{
+    font-family: cutomRegular;
+    src: url("./assets/fonts/static/Inter-Regular.ttf");
+}
+
+p{
+    font-family: customRegular;
+}
+
+@font-face{
+    font-family:InterBold;
+    src: url(Inter-Bold.ttf);
+}
+
+h2{
+    font-family: InterBold;
+}
+
+@font-face{
+    font-family: InterExtraBold;
+    src: url(Inter-ExtraBold.ttf);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: red; //standin
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: yellow; //standin
+    border: 1px solid black; //standin border
+    padding: 20px;
+    //font-size: 30px;
+    //text-align: center;
+}
