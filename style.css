@@ -90,6 +90,10 @@ button {
   height: 100%;
 }
 
+.bottomcard-img {
+  height: 50%;
+}
+
 .menu-ul {
   width: 100%;
   margin: 1px;
