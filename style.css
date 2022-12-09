@@ -4,6 +4,14 @@ body {
 
 ul {
   list-style-type: none;
+  padding: auto;
+  float: center;
+  text-align: left;
+}
+
+hr {
+  width: 100%;
+  text-align: left;
 }
 
 button {
@@ -12,6 +20,34 @@ button {
   text-transform: uppercase;
   padding: 5px 15px;
   border: none;
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url("./assets/fonts/static/Inter-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ExtraBold";
+  src: url("./assets/fonts/static/Inter-ExtraBold.ttf") format("truetype");
+}
+
+p {
+  font-family: Regular;
+}
+
+h1, h2 {
+  font-family: ExtraBold;
+}
+
+h3,
+h4 {
+  font-family: Bold;
 }
 
 .rightmain-font {
@@ -55,6 +91,19 @@ button {
   -ms-grid-column-span: 2;
   grid-area: rightmain;
   background-color: #00001a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .item5 {
@@ -91,7 +140,8 @@ button {
 }
 
 .bottomcard-img {
-  height: 50%;
+  height: 100px;
+  margin-right: 20px;
 }
 
 .menu-ul {
@@ -133,8 +183,15 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 30px 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px 5px;
+  padding: 0px;
+  background-color: transparent;
+  line-height: 15px;
 }
 /*# sourceMappingURL=style.css.map */
