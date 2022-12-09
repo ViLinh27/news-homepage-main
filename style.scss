@@ -5,12 +5,12 @@ body {
 ul {
     list-style-type: none;
     padding: auto;
-    float:center;
+    float: center;
     text-align: left;
 }
 
-hr{
-    width:100%;
+hr {
+    width: 100%;
     text-align: left;
 }
 
@@ -38,17 +38,25 @@ button {
     src: url("./assets/fonts/static/Inter-ExtraBold.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Variable";
+    src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+}
+
 p {
     font-family: Regular;
 }
 
-h1,h2 {
-    font-family: ExtraBold;
+h1,
+h2 {
+    //font-family: ExtraBold;
+    font-family: Bold;
 }
 
 h3,
 h4 {
-    font-family: Bold;
+    //font-family: Bold;
+    font-family: Variable;
 }
 
 .rightmain-font {
@@ -90,6 +98,7 @@ h4 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    line-height: auto;
 }
 
 .item5 {
