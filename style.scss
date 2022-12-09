@@ -22,6 +22,10 @@ button {
     border: none;
 }
 
+button:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
 //global font stuff
 @font-face {
     font-family: "Regular";
@@ -61,6 +65,10 @@ h3,
 h4 {
     //font-family: Bold;
     font-family: Variable;
+}
+
+h4:hover {
+    color: hsl(5, 85%, 63%);
 }
 
 .rightmain-font {
