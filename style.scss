@@ -71,6 +71,10 @@ h4 {
     color: hsl(36, 100%, 99%);
 }
 
+.rightmain-headers:hover {
+    color: hsl(35, 77%, 62%);
+}
+
 .rightmain-para {
     color: hsl(233, 8%, 79%);
 }
@@ -204,8 +208,6 @@ h4 {
 
 //responsiveness
 
-@media only screen and (max-width: 1440px) {}
-
 @media only screen and (max-width: 720px) {}
 
 @media only screen and (max-width: 375px) {
@@ -218,7 +220,7 @@ h4 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 375px;
+        width: 355px;
         float: center;
     }
 
@@ -227,20 +229,22 @@ h4 {
         margin: 0 0;
         padding: 0 0;
         overflow-x: hidden;
+        width: 375px;
     }
 
     .item1 {
         grid-area: logoarea;
         //background-color: red; //standin
         width: 65px;
+        margin: 30px 10px;
     }
 
     .item2 {
         grid-area: menuarea;
         //background-color: orange; //standin
         width: 45px;
-        margin-right: 0;
-        margin-left: 224px;
+        margin-left: 230px;
+        margin-top: 45px;
     }
 
     .item3 {
@@ -249,18 +253,27 @@ h4 {
         //background-color: yellow; //standin
         display: flex;
         flex-direction: column;
+        margin: 0 10px 80px 10px;
     }
 
     .item4 {
-        width: 375px;
+        width: 355px;
         grid-area: rightmain;
         background-color: hsl(240, 100%, 5%);
         line-height: auto;
+        padding: 0;
+        margin: 10px;
     }
 
     .item5 {
         grid-area: bottommenu;
-        background-color: green; //standin
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 400px;
+        width: 355px;
+        margin: 40px 10px;
     }
 
     .grid-container {
@@ -271,10 +284,9 @@ h4 {
             'leftmain leftmain leftmain leftmain leftmain leftmain'
             'rightmain rightmain rightmain rightmain rightmain rightmain'
             'bottommenu bottommenu bottommenu bottommenu bottommenu bottommenu';
-
-        background-color: purple; //standin
-        padding: 0;
+        //background-color: purple; //standin
         margin: 0;
+        padding: 0;
     }
 
     ///end of grid stuff
@@ -304,5 +316,13 @@ h4 {
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
+    }
+
+    .bottomcards {
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        margin: 0;
+        padding: 0px;
     }
 }

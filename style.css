@@ -68,6 +68,10 @@ h4 {
   color: #fffdfa;
 }
 
+.rightmain-headers:hover {
+  color: #e9ab53;
+}
+
 .rightmain-para {
   color: #c5c6ce;
 }
@@ -247,19 +251,21 @@ h4 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 375px;
+    width: 355px;
     float: center;
   }
   body {
     margin: 0 0;
     padding: 0 0;
     overflow-x: hidden;
+    width: 375px;
   }
   .item1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: logoarea;
     width: 65px;
+    margin: 30px 10px;
   }
   .item2 {
     -ms-grid-row: 1;
@@ -267,8 +273,8 @@ h4 {
     -ms-grid-column-span: 5;
     grid-area: menuarea;
     width: 45px;
-    margin-right: 0;
-    margin-left: 224px;
+    margin-left: 230px;
+    margin-top: 45px;
   }
   .item3 {
     width: 375px;
@@ -283,31 +289,47 @@ h4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 0 10px 80px 10px;
   }
   .item4 {
-    width: 375px;
+    width: 355px;
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
     grid-area: rightmain;
     background-color: #00001a;
     line-height: auto;
+    padding: 0;
+    margin: 10px;
   }
   .item5 {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
     grid-area: bottommenu;
-    background-color: green;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 400px;
+    width: 355px;
+    margin: 40px 10px;
   }
   .grid-container {
     width: 375px;
     display: -ms-grid;
     display: grid;
         grid-template-areas: 'logoarea menuarea menuarea menuarea menuarea menuarea' 'leftmain leftmain leftmain leftmain leftmain leftmain' 'rightmain rightmain rightmain rightmain rightmain rightmain' 'bottommenu bottommenu bottommenu bottommenu bottommenu bottommenu';
-    background-color: purple;
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
   .menu-ul {
     display: none;
@@ -349,6 +371,13 @@ h4 {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .bottomcards {
+    /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    margin: 0;
+    padding: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
