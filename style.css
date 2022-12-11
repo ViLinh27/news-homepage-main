@@ -179,10 +179,19 @@ h4:hover {
   margin: 1px;
   list-style: none;
   overflow: hidden;
+  display: block;
+}
+
+#close-button {
+  display: none;
 }
 
 .menu-icon {
   display: none;
+}
+
+.menu-icon:hover {
+  background-color: #e9ab53;
 }
 
 .menu-li {
@@ -340,12 +349,20 @@ h4:hover {
     padding: 0;
   }
   .menu-ul {
-    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  #close-button {
+    position: absolute;
+    top: 0;
+    margin: 10px 10px 0 0;
   }
   .menu-icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
   }
   .leftmain-ul {
     list-style-type: none;

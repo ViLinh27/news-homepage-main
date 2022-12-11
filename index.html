@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
+  <script src="./funcionality.js"></script>
   <title>Frontend Mentor | News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -23,16 +24,19 @@
           <img src="./assets/images/logo.svg" alt="logo"/>
         </div><!--end of item1-->
 
-        <div class="item2">
-          <ul class="menu-ul">
+        <div class="item2" id="sidenav">
+          <img id="close-button" onClick="closeMenu" src="./assets/images/icon-menu-close.svg" alt="close" />
+
+          <ul class="menu-ul" >
             <li class="menu-li"><p>Categories</p></li> 
             <li class="menu-li"><p>Trending</p></li>
             <li class="menu-li"><p>Popular</p></li>
             <li class="menu-li"><p>New</p></li>
             <li class="menu-li"><p>Home</p></li>
           </ul>
-
-          <img class="menu-icon" src="./assets/images/icon-menu.svg" alt="menu icon"/>
+          
+          <!--open menu button in mobile:-->
+          <img id="menu-button" onClick="toggleMenu()" class="menu-icon" src="./assets/images/icon-menu.svg" alt="menu icon"/>
         </div><!--end of item2-->
     <!-- </div> -->
 
